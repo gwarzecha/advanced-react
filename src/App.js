@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Toggle from "./ToggleRPC";
+import Portal from './Portal';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </>
         )}
       </Toggle>
+      <Portal>
+        <h1>Hello from the portal!</h1>
+      </Portal>
     </div>
   );
 }
