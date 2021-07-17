@@ -2,7 +2,8 @@ import { Fragment } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Toggle from "./ToggleRPC";
-import Portal from './Portal';
+import Portal from "./Portal";
+import Modal from "./Modal";
 
 function App() {
   return (
@@ -10,11 +11,14 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
+
       <Toggle>
         {({ on, toggle }) => (
           <>
-            {on && <h1>Show Me</h1>}
-            <button onClick={toggle}>Show / Hide</button>
+            <button onClick={toggle}>Login</button>
+            <Modal on={on} toggle={toggle}>
+              <h1>Still in modal</h1>
+            </Modal>
           </>
         )}
       </Toggle>
