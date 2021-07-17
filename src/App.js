@@ -8,8 +8,8 @@ import Modal from "./Modal";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header>
+        
       </header>
 
       <Toggle>
@@ -17,7 +17,7 @@ function App() {
           <>
             <button onClick={toggle}>Login</button>
             <Modal on={on} toggle={toggle}>
-              <h1>Still in modal</h1>
+              <h1>Here's a suuuuuuuper long string</h1>
             </Modal>
           </>
         )}
