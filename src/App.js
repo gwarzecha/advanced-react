@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Toggle, Portal, Modal } from "./Utils";
+import { Toggle } from "./Utils";
+import { Modal } from "./Elements";
 
 function App() {
   return (
@@ -20,9 +21,6 @@ function App() {
           </>
         )}
       </Toggle>
-      <Portal>
-        <h1>Hello from the portal!</h1>
-      </Portal>
     </div>
   );
 }
